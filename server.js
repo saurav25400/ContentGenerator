@@ -132,7 +132,7 @@ app.use("/api/v1/stripe",stripeRouter);
 
 
 
-app.use(express.static(path.join(__dirname, './masync-mern-ai-frontend/build')));
+app.use(express.static(path.join(__dirname, '../masync-mern-ai-frontend/build')));
 
 
 // Serve the frontend index.html for all other routes
