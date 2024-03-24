@@ -10,7 +10,7 @@ const openApiController = async (req, res, next) => {
     const response = await fetch("https://api.openai.com/v1/completions", {
       method: "POST",
       headers: {
-        Authorization: "Bearer "+"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",
+        Authorization:process.env.OPENAI_API_KEY,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
