@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-  "build": "npm install && npm run build:frontend",
-  "build:frontend": "cd ./masync-mern-ai-frontend && npm install && npm run build"
+  "build": "npm install && npm install --prefix masync-mern-ai-frontend && npm run build --prefix masync-mern-ai-frontend"
+
 
 
 
